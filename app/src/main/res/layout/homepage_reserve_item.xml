@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_size_100"
+    android:orientation="horizontal">
+    <!--第一列-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/iv_home_reserve"
+            android:layout_width="@dimen/activity_size_80"
+            android:layout_height="@dimen/activity_size_80"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/example_pic" />
+
+
+    </RelativeLayout>
+    <!--第二列-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_home_roomName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:text="豪华大床房"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_18" />
+
+            <TextView
+                android:id="@+id/tv_home_repast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_size_5"
+                android:text="含早餐"
+                android:textColor="@color/homepage_orange"
+                android:textSize="@dimen/activity_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/_tv_home_reserve_infor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="25㎡ 双床   5-8层 2m*1.8m"
+                android:textSize="@dimen/activity_size_15" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--第三列-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_size_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠价："
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_15"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_home_reserve_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="498"
+                android:textSize="@dimen/activity_size_18"
+                android:textColor="@color/homepage_orange"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <!--第二行门市价-->
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_size_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门市价："
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_15"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_home_reserve_oprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="698"
+                android:textSize="@dimen/activity_size_15"
+                android:textColor="@color/black"
+
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/home_item_btn_reserve"
+            android:layout_width="@dimen/activity_size_60"
+            android:layout_height="@dimen/activity_size_30"
+            android:background="@color/homepage_orange"
+            android:text="预订"
+            android:textColor="@color/whilte"
+            android:layout_centerInParent="true"
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

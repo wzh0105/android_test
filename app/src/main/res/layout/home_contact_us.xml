@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/whilte">
+        <!--顶部布局-->
+        <include layout="@layout/activity_top"></include>
+
+        <TextView
+            android:layout_width="@dimen/activity_size_350"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_size_20"
+            android:text="\n订房热线：\n000000000\n\n酒店官网：\nwww.qingdaolvqing.com\n\n酒店地址：\n青岛市市南区东海中路"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+</LinearLayout>

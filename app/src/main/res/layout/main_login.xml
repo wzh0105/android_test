@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+    <include layout="@layout/activity_top"></include>
+    <!--最上面一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/btn_login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_18" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/btn_register"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_18" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--手机号输入框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:background="@color/whilte">
+
+        <EditText
+            android:id="@+id/et_phoNum"
+            android:layout_width="@dimen/activity_size_350"
+            android:layout_height="@dimen/activity_size_45"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_size_15"
+            android:background="@null"
+            android:hint="@string/btn_input_phoNum" />
+
+    </LinearLayout>
+
+
+    <!--密码输入框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:layout_marginTop="@dimen/activity_size_1"
+        android:background="@color/whilte">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="@dimen/activity_size_350"
+            android:layout_height="@dimen/activity_size_45"
+            android:inputType="textPassword"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_size_15"
+            android:background="@null"
+            android:hint="@string/btn_input_password" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_40"
+        android:layout_marginTop="@dimen/activity_size_10">
+        <CheckBox
+            android:id="@+id/cb_remember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/activity_size_15"
+            android:textColor="@color/gray3"
+            android:text="记住账号及密码"/>
+    </LinearLayout>
+
+    <!--登录按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:layout_marginTop="@dimen/activity_size_10">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/activity_size_350"
+            android:layout_height="@dimen/activity_size_50"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/btn_send_code"
+            android:text="@string/btn_login"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/activity_size_18" />
+    </RelativeLayout>
+
+    <!--最下面一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/btn_retrieve_password"
+                android:textColor="@color/homepage_orange"
+                android:textSize="@dimen/activity_size_15" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7">
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/btn_phoNum_login"
+                android:textColor="@color/homepage_orange"
+                android:textSize="@dimen/activity_size_15" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

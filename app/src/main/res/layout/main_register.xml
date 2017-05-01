@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte"
+    android:orientation="vertical">
+    <!--头部-->
+    <include layout="@layout/activity_top"></include>
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/activity_size_20"
+        android:layout_width="@dimen/activity_size_100"
+        android:layout_height="@dimen/activity_size_100"
+        android:layout_gravity="center"
+        android:background="@mipmap/default_user_img"
+        />
+    <!--姓名布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <TextView
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_size_20"
+                android:gravity="center_horizontal"
+                android:text="真实姓名"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_18" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/main_ed_name"
+                android:layout_width="@dimen/activity_size_250"
+                android:layout_height="@dimen/activity_size_40"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="请放心填写，我们将严格保密"
+                android:maxLength="10"
+                android:textSize="@dimen/activity_size_15" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--横线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_2"
+        android:background="@mipmap/gray_hori_line" />
+
+    <!--手机号-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <TextView
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_size_20"
+                android:text="+86"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_18" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/main_ed_phonum"
+                android:layout_width="@dimen/activity_size_250"
+                android:layout_height="@dimen/activity_size_40"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:background="@null"
+                android:digits="0123456789"
+                android:layout_centerVertical="true"
+                android:hint="手机号将作为唯一账号"
+                android:maxLength="11"
+                android:textSize="@dimen/activity_size_15" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--横线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_2"
+        android:background="@mipmap/gray_hori_line" />
+
+    <!--验证码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <TextView
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_size_20"
+                android:text="验证码"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_18" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/main_ed_code"
+                android:layout_width="@dimen/activity_size_250"
+                android:layout_height="@dimen/activity_size_40"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:hint="请输入收到的验证码"
+                android:maxLength="6"
+                android:textSize="@dimen/activity_size_15" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4">
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/activity_size_100"-->
+                <!--android:layout_height="@dimen/activity_size_40"-->
+                <!--android:background="@mipmap/btn_regeister_send_code"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--/>-->
+            <Button
+                android:id="@+id/send_code"
+                android:layout_width="@dimen/activity_size_100"
+                android:layout_height="@dimen/activity_size_40"
+                android:background="@mipmap/btn_send_code"
+                android:layout_centerInParent="true"
+                android:text="发送验证码"
+                android:textColor="@color/whilte"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--横线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_2"
+        android:background="@mipmap/gray_hori_line" />
+    <!--登录密码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <TextView
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_size_20"
+                android:text="密码"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_18" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/main_ed_password"
+                android:layout_width="@dimen/activity_size_250"
+                android:layout_height="@dimen/activity_size_40"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:hint="请设置密码"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:textSize="@dimen/activity_size_15" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--注册按钮-->
+    <ImageView
+        android:id="@+id/register"
+        android:layout_width="@dimen/activity_size_300"
+        android:layout_height="@dimen/activity_size_40"
+        android:background="@mipmap/btn_regeister"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_size_30"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/main_cb_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/activity_size_30"
+        android:layout_marginTop="@dimen/activity_size_10"
+        android:text="我已同意海情大酒店用户协定"
+        android:textSize="@dimen/text_size_15"
+        />
+
+</LinearLayout>
